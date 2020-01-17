@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Moq" Version="4.13.1" />
+    <PackageReference Include="nunit" Version="3.12.0" />
+    <PackageReference Include="NUnit3TestAdapter" Version="3.13.0" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Junto.Seguro.API\Junto.Seguros.API.csproj" />
+    <ProjectReference Include="..\Junto.Seguros.Data\Junto.Seguros.Data.csproj" />
+    <ProjectReference Include="..\Junto.Seguros.Domain\Junto.Seguros.Domain.csproj" />
+    <ProjectReference Include="..\Junto.Seguros.Infra\Junto.Seguros.Infra.csproj" />
+    <ProjectReference Include="..\Junto.Seguros.Services\Junto.Seguros.Services.csproj" />
+  </ItemGroup>
+
+</Project>
